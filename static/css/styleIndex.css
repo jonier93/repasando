@@ -1,0 +1,26 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+button {
+    font-size: 25px;
+    background-color: aqua;    
+    border-radius: 10px;
+}
+
+p{
+    text-align: justify;
+    margin: 5%;
+    font-size: 20px;
+}
+
+a{
+    font-size: 20px;
+}
+
+footer {
+    position: absolute;
+    top:90%;
+    right: 10%;
+}

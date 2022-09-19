@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styleIndex.css">
+    <script src="/static/js/appIndex.js" type="module"></script> <!-- El type module es obligatorio para que funcionen los botones -->
+    <title> Home </title>
+</head>
+<body>    
+    <h1> Main Page </h1>
+    <p> La principal diferencia entre Backend y Frontend se basa en los aspectos de la web que gestionan y, en definitiva, en su objetivo. Un desarrollador Frontend debe diseñar una web útil para los usuarios, sencilla de utilizar y generalmente interactiva. 
+        En definitiva, un desarrollador Frontend trabaja únicamente para mejorar la experiencia del usuario. Por otro lado, un desarrollador Backend se encarga de administrar el almacenamiento de datos y la comunicación de la página con bases de datos y el servidor, así como en adaptar la web a diferentes dispositivos. </p>
+    {% if mes!= "": %}
+        <h2> {{mes}} </h2>
+
+        {% for data in mes: %}
+        <h3> {{ data }}</h3>
+        {% endfor %}
+
+        {% for data in mes: %}
+        <h4> {{ data[0] }} </h4>
+        {% endfor %}
+    {% endif %}
+
+    <button type="submit" id="btnConsultar"> Consultar </button>
+    <br><br>
+    <a href="formulario"> Registrar </a>
+    <footer> Versión 1.0 </footer>
+</body>
+</html>
